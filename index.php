@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -54,9 +54,9 @@
             <span class="icon-bar"></span>
           </button>
           <a class="brand" href="#">Fontash</a>
-          <form class="navbar-form pull-left">
+          <form class="navbar-form pull-left" method="get">
             <fieldset>
-                <input type="text" placeholder="Type something…">
+                <input type="text" placeholder="Type something…" name="text">
             </fieldset>
           </form> 
           <div class="nav-collapse collapse">
@@ -101,7 +101,8 @@
         <!--/span-->
         <div class="row-fluid">
         <ul class="thumbnails">
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
+        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src="">
+           </a></i>
         <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
         <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
         <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>                
