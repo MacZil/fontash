@@ -109,25 +109,28 @@
        </div>
 
        <div class="span11">
-
           <?php 
+
+          // TODO: define police, id
 
           for($i = 0; $i < 4; $i++) {
 
-            echo '<div class="row-fluid"> <ul class="thumbnails">';
+            echo '<div class="row-fluid"><ul class="thumbnails">';
             for($j = 0; $j < 4; $j++) {
 
               echo '<li class="span3">
                     <a href="#" class="thumbnail">
-                    <img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src="">
-                    <?= $_GET["text"] ?>
+                    <img data-src="holder.js/260x120" alt="', $_GET["text"], '" style="width: 260px; height: 120px;" src="">
                     </a></i>';
+
             }
             echo '</ul></div>';
           }
-          echo '</div>';
-
+          
           ?>
+        </div>
+
+          
 
       <hr>
 
