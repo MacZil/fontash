@@ -48,34 +48,44 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">
+
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+
           <a class="brand" href="#">Fontash</a>
+
           <form class="navbar-form pull-left" method="get">
             <fieldset>
                 <input type="text" placeholder="Type something…" name="text">
             </fieldset>
           </form> 
+
           <div class="nav-collapse collapse">
+
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link">Michael</a>
             </p>
+
              <ul class="nav">
               <li class="active"><a href="#simple"><i class="icon-tag icon-white"></i> Simple</a></li>
               <li><a href="#elegant"><i class="icon-tag icon-white"></i> Elegant</a></li>
               <li><a href="#cbold"><i class="icon-tag icon-white"></i> Bold</a></li>
             </ul>
+
           </div><!--/.nav-collapse -->
+
         </div>
       </div>
     </div>
+
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span1">
          <div class="well sidebar-nav affix">
+
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
               <li class="active"><a href="#">Link</a></li>
@@ -94,48 +104,30 @@
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
             </ul>
+
          </div>
        </div>
+
        <div class="span11">
-          <!--/.well -->
-        <!--/span-->
-        <div class="row-fluid">
-        <ul class="thumbnails">
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src="">
-           </a></i>
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>                
-        </ul>
-        </div>
-        
-        <div class="row-fluid">
-        <ul class="thumbnails">
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>                
-        </ul>
-        </div>
-        
-        <div class="row-fluid">
-        <ul class="thumbnails">
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>                
-        </ul>
-        </div>
-        
-        <div class="row-fluid">
-        <ul class="thumbnails">
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>
-        <li class="span3"><a href="#" class="thumbnail"><img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src=""></a></i>                
-        </ul>
-        </div>
-</div>
+
+          <?php 
+
+          for($i = 0; $i < 4; $i++) {
+
+            echo '<div class="row-fluid"> <ul class="thumbnails">';
+            for($j = 0; $j < 4; $j++) {
+
+              echo '<li class="span3">
+                    <a href="#" class="thumbnail">
+                    <img data-src="holder.js/260x120" alt="260x120" style="width: 260px; height: 120px;" src="">
+                    <?= $_GET["text"] ?>
+                    </a></i>';
+            }
+            echo '</ul></div>';
+          }
+          echo '</div>';
+
+          ?>
 
       <hr>
 
