@@ -9,7 +9,9 @@
 
     <!-- Le styles -->
     <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/fontash.css" rel="stylesheet">
     <style type="text/css">
+    
       body {
         padding-top: 60px;
         padding-bottom: 40px;
@@ -17,16 +19,22 @@
       }
       .sidebar-nav {
         padding: 9px 0;
+        background-color: rgb(43, 43, 43);
+        border: 1px solid rgb(0, 0, 0);
       }
-
+      @media (max-width: 979px) {
+      body {
+        padding-top: 0;
+      }
       @media (max-width: 980px) {
         /* Enable use of floated navbar text */
         .navbar-text.pull-right {
-          float: none;
-          padding-left: 5px;
-          padding-right: 5px;
-        }
+        float: none;
+        padding-left: 5px;
+        padding-right: 5px;
       }
+      }    
+      
     </style>
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -65,8 +73,10 @@
             </p>
              <ul class="nav">
               <li class="active"><a href="#simple"><i class="icon-tag icon-white"></i> Simple</a></li>
+              <li class="divider-vertical"></li>
               <li><a href="#elegant"><i class="icon-tag icon-white"></i> Elegant</a></li>
-              <li><a href="#cbold"><i class="icon-tag icon-white"></i> Bold</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#bold"><i class="icon-tag icon-white"></i> Bold</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -77,22 +87,16 @@
         <div class="span1">
          <div class="well sidebar-nav affix">
             <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li class="active"><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li class="nav-header">Toolbar</li>
+              <br/>
+              <div id="text-color"></div>
+              <br/>
+              <div id="text-background-color"></div>
+              <br/>
+              <div><a class="small" href="#">A</a><a class="medium" href="#">A</a><a class="large" href="#">A</a></div>
+              <br/>
+              <div><a class="bold" href="#">B</a><a class="italics" href="#">I</a></div>
+              <br/>
             </ul>
          </div>
        </div>
